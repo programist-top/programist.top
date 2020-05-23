@@ -9,9 +9,9 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/dist/reset.min.css">
-    <link rel="stylesheet" href="./css/dist/style.min.css">
-    <link rel="stylesheet" href="./css/dist/vegas.min.css">
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/vegas.min.css">
 </head>
 
 <body>
@@ -23,7 +23,6 @@
                     <li><a href="#about">Про нас</a></li>
                     <li><a href="#price">Наші ціни</a></li>
                     <li><a href="#work">Як ми працюємо</a></li>
-                    <!-- <li><a href="#portfolio">Портфоліо</a></li> -->
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
             </nav>
@@ -240,7 +239,7 @@
             <h3 class="subtitle">наші роботи</h3>
             <div class="inner-container">
                 <a href="http://firanka.pp.ua" title="Фіранка" class="portfolio-block">
-                    <img src="" alt="">
+                    <img src="http://programist.top/wp-content/uploads/2019/05/firanka.pp_.ua_-768x363.png" alt="">
                     <div class="portfolio-block__title">Фіранка</div>
                 </a>
             </div>
@@ -250,13 +249,12 @@
     <section class="contact block" id="contact">
         <div class="container">
             <h2 class="title">КОНТАКТИ</h2>
-            <h3 class="subtitle">Напишіть нам</h3>
-            <!--<span style="color:#47515e">color:#54595f</span>-->
+            <h3 class="subtitle">Напишіть нам</h3><span style="color:#54595f">color:#54595f</span>
             <div class="inner-container">
                 <div class="left">
-                    <form action="mailto:info@programist.top" method="post">
+                    <form action="" method="post">
                         <p><input type="text" name="name" id="name" placeholder="І'мя"></p>
-                        <p><input type="email" name="email" id="email" placeholder="Email"></p>
+                        <p><input type="email" name="email" id="email" placeholder="email"></p>
                         <p><textarea name="msg" id="msg" placeholder="Повідомлення"></textarea></p>
                         <p><input type="button" value="Надіслати"></p>
                     </form>
@@ -264,15 +262,15 @@
                 <div class="right">
                     <p><a href="tel:+380938800822">+380 93 8800 822</a></p>
                     <p><a href="mailto:info@programist.top">info@programist.top</a></p>
-                    <p class="icon"><a href="https://fb.com/programist.top">facebook</a></p>
-                    <p class="icon"><a href="https://instagram.com/programist.top">instagram</a></p>
+                    <p class="icon">Facebook </p>
+                    <p class="icon">Instagram </p>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer block">
         <div class="container">
-            <h2>© 2019 - 2020 <a href="/"><span>Programist.Top</span> Laboratory</a></h2>
+            <h2>© 2019 - 2020 <a href="/"><span style="color:#fff;">Programist.Top</span>Laboratory</a></h2>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

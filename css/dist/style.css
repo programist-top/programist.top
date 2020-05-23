@@ -14,7 +14,7 @@ a {
 
 .title {
   font-family: 'Roboto', sans-serif;
-  font-family: 900;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -73,33 +73,26 @@ a {
 }
 
 .header {
-  background: scroll center/cover url(../img/bg.jpg) no-repeat !important;
+  background: scroll center/cover url(../../img/bg.jpg) no-repeat !important;
   height: 100vh;
 }
 
 .header .container .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
-.header .container .nav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header .container .nav ul {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.header .container .nav li ul {
+.header .container .nav ul li {
   text-transform: uppercase;
   padding: 10px;
 }
 
-.header .container .nav li ul + ul {
+.header .container .nav ul li + li {
   margin-left: 15px;
 }
 
@@ -128,14 +121,9 @@ a {
 }
 
 .about .container .inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about .container .inner-container .left,
@@ -197,22 +185,16 @@ a {
 }
 
 .price {
-  background: scroll center/cover url(../img/price-bg.jpg) no-repeat #54595f !important;
+  background: scroll center/cover url(../../img/price-bg.jpg) no-repeat #54595f !important;
   background-color: #303133;
   background-blend-mode: multiply;
 }
 
 .price .container .inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .price .container .inner-container .block-price {
@@ -223,17 +205,12 @@ a {
   color: #fff;
   border-radius: 10px;
   min-height: 200px;
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .price .container .inner-container .block-price:hover {
-  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.9);
-          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.9);
-  -webkit-transition: -webkit-box-shadow .3s;
-  transition: -webkit-box-shadow .3s;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.9);
   transition: box-shadow .3s;
-  transition: box-shadow .3s, -webkit-box-shadow .3s;
 }
 
 .price .container .inner-container .block-price + .block-price {
@@ -262,7 +239,7 @@ a {
 
 .price .container .inner-container .block-price__price {
   font-family: 'Roboto', sans-serif;
-  font-family: 900;
+  font-weight: 900;
   font-size: 70px;
   padding: 20px 0;
   color: #777;
@@ -298,19 +275,15 @@ a {
   color: #777;
   padding: 10px;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .price .container .inner-container .block-price__footer a:hover {
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
   opacity: .8;
 }
 
 .work .container .inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -379,17 +352,12 @@ a {
 
 .portfolio .container .btn:hover {
   background: #fff8;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 
 .contact .container .inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .contact .container .inner-container .left {
@@ -422,7 +390,8 @@ a {
 
 .contact .container .inner-container .right {
   position: relative;
-  background: url(../img/webdesign.jpg) bottom right no-repeat contain;
+  background: url(../../img/webdesign.jpg) no-repeat bottom right/contain;
+  color: #fff;
   width: 100%;
   max-width: 300px;
   width: 100%;
@@ -432,7 +401,7 @@ a {
 
 .contact .container .inner-container .right p a {
   display: inline-block;
-  color: #54595f;
+  color: inherit;
   padding-left: 15px;
   font-size: 25px;
   font-weight: bold;
@@ -454,4 +423,11 @@ a {
   text-align: center;
   padding: 10px 0;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer.block {
+  padding: 20px 0;
+}
+
+.footer.block span {
+  color: #54595f;
+}

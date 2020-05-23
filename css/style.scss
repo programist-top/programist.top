@@ -14,7 +14,7 @@ a {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-family: 900;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -73,25 +73,23 @@ a {
 }
 
 .header {
-    background: scroll center/cover url(../img/bg.jpg) no-repeat !important;
+    background: scroll center/cover url(../../img/bg.jpg) no-repeat !important;
     height: 100vh;
 
     .container {
-        // position: relative;
-
         .nav {
             display: flex;
             justify-content: space-between;
 
-            li {
+            ul {
                 display: flex;
                 flex-wrap: wrap;
 
-                ul {
+                li {
                     text-transform: uppercase;
                     padding: 10px;
 
-                    +ul {
+                    +li {
                         margin-left: 15px;
                     }
                 }
@@ -101,8 +99,6 @@ a {
         .title {
             text-align: center;
             margin-top: 15%;
-            // position: absolute;
-            // top: 50%;
 
             h1 {
                 display: inline-block;
@@ -195,7 +191,7 @@ a {
 }
 
 .price {
-    background: scroll center/cover url(../img/price-bg.jpg) no-repeat #54595f !important;
+    background: scroll center/cover url(../../img/price-bg.jpg) no-repeat #54595f !important;
     background-color: #303133;
     background-blend-mode: multiply;
 
@@ -211,8 +207,7 @@ a {
                 max-width: 300px;
                 min-width: 300px;
                 background: #777;
-                color: #fff;
-                // border: 1px solid #000;
+                color: #fff; // border: 1px solid #000;
                 border-radius: 10px;
                 min-height: 200px;
                 box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
@@ -251,7 +246,7 @@ a {
 
                 &__price {
                     font-family: 'Roboto', sans-serif;
-                    font-family: 900;
+                    font-weight: 900;
                     font-size: 70px;
                     padding: 20px 0;
                     color: #777;
@@ -431,7 +426,8 @@ a {
 
             .right {
                 position: relative;
-                background: url(../img/webdesign.jpg) bottom right no-repeat contain;
+                background: url(../../img/webdesign.jpg) no-repeat bottom right / contain;
+                color: #fff;
                 width: 100%;
                 max-width: 300px;
                 width: 100%;
@@ -441,7 +437,8 @@ a {
                 p {
                     a {
                         display: inline-block;
-                        color: #54595f;
+                        // color: #54595f;
+                        color: inherit;
                         padding-left: 15px;
                         font-size: 25px;
                         font-weight: bold;
@@ -470,6 +467,14 @@ a {
 .footer {
     text-align: center;
     padding: 10px 0;
+
+    &.block {
+        padding: 20px 0;
+
+        span {
+            color: #54595f;
+        }
+    }
 
     // .container {}
 }
