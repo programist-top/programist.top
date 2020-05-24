@@ -419,6 +419,11 @@ a {
                     font-family: "Roboto", Sans-serif;
                     font-weight: 500;
                     padding: 15px;
+                    transition: all .8s;
+
+                    &:hover {
+                        background: #54595f;
+                    }
                 }
 
 
@@ -435,6 +440,15 @@ a {
                 margin-left: 20px;
 
                 p {
+                    &+p {
+                        margin-top: 15px;
+                    }
+
+                    &.icon {
+                        display: inline-block;
+                        margin-top: 20px;
+                    }
+
                     a {
                         display: inline-block;
                         // color: #54595f;
@@ -444,18 +458,17 @@ a {
                         font-weight: bold;
                         font-family: "Roboto", Sans-serif;
 
-                    }
+                        img {
+                            width: 80px;
+                        }
 
-                    &+p {
-                        margin-top: 15px;
+                        &:hover {
+                            img {
+                                border: 1px solid #fff;
+                                border-radius: 5px;
+                            }
+                        }
                     }
-                }
-
-                img {
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: 70%;
                 }
             }
         }
@@ -471,10 +484,139 @@ a {
     &.block {
         padding: 20px 0;
 
-        span {
-            color: #54595f;
+        a {
+            span {
+                color: #54595f;
+                border: 1px solid #316694;
+                padding: 5px;
+                transition: background .8s;
+
+                &:hover {
+                    background: #54595f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 929px) {
+    .about {
+        .inner-container {
+            flex-direction: column-reverse;
+
+            .left,
+            .center,
+            .right {
+                margin: 0 auto;
+                text-align: center !important;
+            }
+
+            .center {
+                order: 1;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .contact {
+        .inner-container {
+            flex-direction: column;
+        }
+
+        .left,
+        .right {
+            margin: 0 auto !important;
+        }
+
+        .right {
+            background: none !important;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 730px) {
+    .header {
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
         }
     }
 
-    // .container {}
+    .price {
+        .inner-container {
+            flex-direction: column;
+
+            .block-price {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .footer h2 {
+        font-size: 30px !important;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header {
+        h1 {
+            font-size: 45px !important;
+        }
+
+        h2 {
+            font-size: 16px !important;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .header {
+        h1 {
+            font-size: 35px !important;
+        }
+
+        h2 {
+            font-size: 12px !important;
+        }
+    }
+
+    .footer {
+        h2 {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-top: 20px;
+
+                span {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 375px) {
+    .header {
+        h1 {
+            font-size: 25px !important;
+        }
+    }
+
+    .price {
+        .container {
+            padding: 0;
+        }
+    }
+
+    .work {
+        .container {
+            padding: 0;
+        }
+    }
 }
