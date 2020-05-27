@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".header").vegas({transition:"fade",preloadImage:!0,shuffle:!0,cover:!0,overlay:"js/overlays/08.png",delay:5e3,animation:"kenburns",animationDuration:1e4,slides:[{src:"./img/bg.jpg"}]}),$(".lazy").Lazy({scrollDirection:"vertical",effect:"fadeIn",visibleOnly:!0,onError:function(e){console.log("error loading "+e.data("src"))}})});
