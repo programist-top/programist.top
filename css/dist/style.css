@@ -377,7 +377,7 @@ a {
   min-height: 150px;
 }
 
-.contact .container .inner-container .left input[type="button"] {
+.contact .container .inner-container .left button[type="submit"] {
   text-transform: uppercase;
   background-color: rgba(49, 102, 148, 0.88);
   color: #fff;
@@ -388,7 +388,7 @@ a {
   transition: all .8s;
 }
 
-.contact .container .inner-container .left input[type="button"]:hover {
+.contact .container .inner-container .left button[type="submit"]:hover {
   background: #54595f;
 }
 
